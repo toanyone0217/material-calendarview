@@ -45,19 +45,19 @@ tasks.withType(Javadoc) {
   options.addStringOption('charSet', 'UTF-8')
 }
 
-android.libraryVariants.all { variant ->
-  task("generate${variant.name.capitalize()}Javadoc", type: Javadoc) {
-    title "Material CalendarView ${version}"
-    description "Generates Javadoc for $variant.name."
-    source = variant.javaCompiler.source
-    doFirst {
-      classpath = files(variant.javaCompiler.classpath.files, project.android.getBootClasspath())
-    }
-    exclude '**/BuildConfig.java'
-    exclude '**/R.java'
-    options {
-      links "http://docs.oracle.com/javase/7/docs/api/"
-      linksOffline "http://d.android.com/reference", "${android.sdkDirectory}/docs/reference"
-    }
-  }
-}
+//android.libraryVariants.all { variant ->
+//  task("generate${variant.name.capitalize()}Javadoc", type: Javadoc) {
+//    title "Material CalendarView ${version}"
+//    description "Generates Javadoc for $variant.name."
+//    source = variant.javaCompiler.source
+//    doFirst {
+//      classpath = files(variant.javaCompiler.classpath.files, project.android.getBootClasspath())
+//    }
+//    exclude '**/BuildConfig.java'
+//    exclude '**/R.java'
+//    options {
+//      links "http://docs.oracle.com/javase/7/docs/api/"
+//      linksOffline "http://d.android.com/reference", "${android.sdkDirectory}/docs/reference"
+//    }
+//  }
+//}
