@@ -27,7 +27,6 @@
         android:layout_margin="@dimen/mcv_arrow_margin"
         android:background="?selectableItemBackgroundBorderless"
         android:contentDescription="@string/previous"
-        android:padding="@dimen/mcv_arrow_padding"
         app:srcCompat="@drawable/mcv_action_previous" />
 
     <ImageButton
@@ -37,7 +36,6 @@
         android:layout_margin="@dimen/mcv_arrow_margin"
         android:background="?selectableItemBackgroundBorderless"
         android:contentDescription="@string/next"
-        android:padding="@dimen/mcv_arrow_padding"
         app:srcCompat="@drawable/mcv_action_next" />
 
 </LinearLayout>
